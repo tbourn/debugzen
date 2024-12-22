@@ -10,9 +10,9 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
 
   const images = [
-    '/images/carousel-1.png',
-    '/images/carousel-2.png',
-    '/images/carousel-3.png',
+    '/debugzen-frontend/images/carousel-1.png',
+    '/debugzen-frontend/images/carousel-2.png',
+    '/debugzen-frontend/images/carousel-3.png',
   ];
 
   return (
