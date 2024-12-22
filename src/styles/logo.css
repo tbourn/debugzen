@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.logo-container img {
+  height: 50px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.logo-container span {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #005f5f, #00a0a0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.logo-container img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .logo-container img {
+    height: 40px;
+  }
+
+  .logo-container span {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,158 @@
+/* feedback.css */
+
+/* Right Pane: Feedback */
+.rightPane {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: flex-basis 0.3s ease;
+  border: 1px solid #ddd;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.95),
+    rgba(245, 245, 245, 0.9)
+  );
+}
+
+/* Feedback Pane when empty */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+}
+
+/* Feedback Item */
+.feedbackItem {
+  background-color: #e6f7f7;
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Gradient Header */
+.feedbackHeader {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: right;
+  font-size: 24px;
+  font-family: 'Exo 2', sans-serif;
+  background: linear-gradient(90deg, #004f4f, #008080, #004f4f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 3s infinite linear;
+  user-select: none;
+}
+
+/* Loading Spinner */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+  color: #004f4f;
+  gap: 15px;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-top: 6px solid #008080;
+  border-radius: 50%;
+  animation:
+    smooth-spin 1s linear infinite,
+    glow-pulse 1.5s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(0, 128, 128, 0.5);
+}
+
+@keyframes smooth-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Right Pane: Feedback */
+.rightPane {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  position: relative; /* Ensure pseudo-element is positioned relative to this container */
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: flex-basis 0.3s ease;
+  border: 1px solid #ddd;
+  overflow: hidden; /* Clip pseudo-element to the container */
+}
+
+/* Add pseudo-element for the background */
+.rightPane::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/path/to/your/image.webp') center/cover no-repeat;
+  margin: -20px; /* Matches the padding value */
+  z-index: 1; /* Ensure it's below the content */
+  opacity: 0.5; /* Adjust for the desired fade effect */
+  pointer-events: none; /* Prevent interaction with the pseudo-element */
+}
+
+/* Feedback Pane content should be above the pseudo-element */
+.rightPane > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Feedback Pane when empty */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+}
+
+/* Feedback Item */
+.feedbackItem {
+  background-color: #e6f7f7;
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Gradient Header */
+.feedbackHeader {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: right;
+  font-size: 24px;
+  font-family: 'Exo 2', sans-serif;
+  background: linear-gradient(90deg, #004f4f, #008080, #004f4f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 3s infinite linear;
+  user-select: none;
+}

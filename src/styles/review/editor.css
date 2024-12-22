@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+
+/* App Layout */
+.container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #141414;
+}
+
+/* Left Pane: Code Editor */
+.leftPane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle, #1f1f1f, #292929);
+  border: 1px solid #3a3a3a;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    inset 0 -1px 4px rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  border-radius: 4px;
+  overflow: auto;
+  transition: all 0.3s ease;
+  min-width: 340px;
+}
+
+/* Editor Container */
+.editorContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+}
+
+/* CodeMirror Editor */
+.CodeMirror {
+  flex: 1;
+  height: auto;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: #2d2d2d;
+  overflow: hidden;
+}

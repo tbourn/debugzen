@@ -1,0 +1,22 @@
+/* content.css */
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #000;
+  max-width: 80%;
+}
+
+.content p {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: center;
+  background: rgba(0, 79, 79, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  user-select: none;
+}

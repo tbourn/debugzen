@@ -1,0 +1,33 @@
+/* home.css */
+@import './button.css';
+@import './content.css';
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/images/background.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  user-select: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+}
+
+.bullet {
+  margin: 0 5px;
+  font-size: 18px;
+  color: #ffffff;
+}

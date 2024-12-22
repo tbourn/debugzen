@@ -1,0 +1,12 @@
+.headerWithButtons {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 10px;
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}

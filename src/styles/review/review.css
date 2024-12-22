@@ -1,0 +1,13 @@
+/* review.css */
+@import './button.css';
+@import './editor.css';
+@import './header.css';
+
+/* Resizer */
+.resizer {
+  width: 5px;
+  background-color: #444;
+  cursor: ew-resize;
+  height: 100%;
+  z-index: 2;
+}
