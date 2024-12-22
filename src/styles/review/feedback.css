@@ -93,12 +93,12 @@
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.9);
   color: #333;
-  position: relative; /* Ensure pseudo-element is positioned relative to this container */
+  position: relative;
   border-radius: 4px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: flex-basis 0.3s ease;
   border: 1px solid #ddd;
-  overflow: hidden; /* Clip pseudo-element to the container */
+  overflow: hidden;
 }
 
 /* Add pseudo-element for the background */
@@ -109,11 +109,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/path/to/your/image.webp') center/cover no-repeat;
-  margin: -20px; /* Matches the padding value */
-  z-index: 1; /* Ensure it's below the content */
-  opacity: 0.5; /* Adjust for the desired fade effect */
-  pointer-events: none; /* Prevent interaction with the pseudo-element */
+  margin: -20px;
+  z-index: 1;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 /* Feedback Pane content should be above the pseudo-element */
