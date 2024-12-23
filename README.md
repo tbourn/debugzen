@@ -1,6 +1,6 @@
 # DebugZen Frontend
 
-DebugZen Frontend is a React-based web interface for submitting and analyzing code snippets using [DebugZen's AI-powered backend](https://github.com/tbourn/debugzen-backend)
+React-based web interface for submitting and analyzing code snippets using [DebugZen's AI-powered backend](https://github.com/tbourn/debugzen-backend)
 
 ---
 
