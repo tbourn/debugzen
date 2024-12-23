@@ -1,4 +1,4 @@
-# DebugZen Frontend
+# DebugZen
 
 React-based web interface for submitting and analyzing code snippets using [DebugZen's AI-powered backend](https://github.com/tbourn/debugzen-backend)
 
@@ -36,8 +36,8 @@ React-based web interface for submitting and analyzing code snippets using [Debu
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/tbourn/debugzen-frontend.git
-cd debugzen-frontend
+git clone https://github.com/tbourn/debugzen.git
+cd debugzen
 npm install
 npm run start
 ```
